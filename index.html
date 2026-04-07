@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miray Helva | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header>
+    <div class="header-content">
+        <div class="profile-pic-container">
+            <img src="c:\Users\herob\Downloads\WhatsApp Image 2026-04-07 at 14.10.37.jpeg" alt="Miray Helva" class="profile-pic">
+        </div>
+        <h1>Miray Helva</h1>
+        <p id="typing-text" class="subtitle"></p>
+        
+        <a href="https://www.linkedin.com/in/miray-helva-b19952295" target="_blank" class="linkedin-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn'de Bağlantı Kur
+        </a>
+    </div>
+</header>
+
+    <main>
+        <section id="projects">
+            <h2><i class="fas fa-microchip"></i> Bitirme Tezi & IoT</h2>
+            
+            <div class="project-card">
+                <div class="card-header">
+                    <h3>Güneş Enerjili Akıllı Ev Sistemi</h3>
+                    <span class="status-badge">Tez Projesi - 2025</span>
+                </div>
+                
+                <p><strong>Proje Özeti:</strong> Yenilenebilir enerji kaynaklı, Arduino mimarisi üzerine kurulu kapsamlı bir otomasyon sistemidir. Güvenlik, konfor ve enerji verimliliği modüllerini içermektedir.</p>
+
+                <div class="technical-details">
+                    <h4><i class="fas fa-tools"></i> Teknik Detaylar:</h4>
+                    <ul>
+                        <li><strong>Haberleşme:</strong> Bluetooth üzerinden seri veri iletimi ve mobil kontrol.</li>
+                        <li><strong>Sensör Yönetimi:</strong> Gaz (MQ-2), Hareket (PIR) ve Mesafe sensörlerinin kalibrasyonu.</li>
+                        <li><strong>Enerji:</strong> Güneş paneli entegrasyonu ile sürdürülebilir sistem beslemesi.</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/helvamiray/Akilli-Ev-Sistemi-IoT/blob/main/tez_C%CC%A7IKTI.pdf" target="_blank" class="doc-btn"><i class="fas fa-file-pdf"></i> Tezi Görüntüle</a>
+                    <a href="https://github.com/helvamiray/Akilli-Ev-Sistemi-IoT" target="_blank" class="doc-btn"><i class="fab fa-github"></i> Kodları İncele</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2><i class="fas fa-laptop-code"></i> Yetenekler</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt" style="color: #264de4;"></i> CSS3</li>
+                <li><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</li>
+                <li><i class="fas fa-microchip"></i> Embedded C++</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> İletişim</h2>
+            <div class="contact-info">
+                <a href="mailto:mirayhelva15@icloud.com" class="email-link">
+                    <i class="fas fa-at"></i> mirayhelva15@icloud.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Miray Helva - Yazılım Mühendisliği Öğrencisi</p>
+    </footer>
+
+    <script>
+        const text = "Software Engineering Student | IoT & Frontend Developer";
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typing-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 70);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
+
+</body>
+</html>

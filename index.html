@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 </head>
 <body>
 
-   <header>
+<header>
     <div class="header-content">
         <div class="profile-pic-container">
             <img src="profil.jpg" alt="Miray Helva" class="profile-pic">
@@ -18,75 +18,76 @@
         <p id="typing-text" class="subtitle"></p>
         
         <a href="https://www.linkedin.com/in/miray-helva-b19952295" target="_blank" class="linkedin-btn">
-            <i class="fab fa-linkedin"></i> LinkedIn'de Bağlantı Kur
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
         </a>
     </div>
 </header>
 
-    <main>
-        <section id="projects">
-            <h2><i class="fas fa-microchip"></i> Bitirme Tezi & IoT</h2>
+<main>
+    <section id="projects">
+        <h2><i class="fas fa-microchip"></i> Graduation Thesis & IoT</h2>
+        <div class="project-card">
+            <div class="card-header">
+                <h3>Solar Powered Smart Home Ecosystem</h3>
+                <span class="status-badge">Thesis Project - 2025</span>
+            </div>
+            <p><strong>Project Summary:</strong> A comprehensive automation system based on Arduino architecture, powered by renewable energy. Includes security, comfort, and energy efficiency modules.</p>
             
-            <div class="project-card">
-                <div class="card-header">
-                    <h3>Güneş Enerjili Akıllı Ev Sistemi</h3>
-                    <span class="status-badge">Tez Projesi - 2025</span>
-                </div>
-                
-                <p><strong>Proje Özeti:</strong> Yenilenebilir enerji kaynaklı, Arduino mimarisi üzerine kurulu kapsamlı bir otomasyon sistemidir. Güvenlik, konfor ve enerji verimliliği modüllerini içermektedir.</p>
-
-                <div class="technical-details">
-                    <h4><i class="fas fa-tools"></i> Teknik Detaylar:</h4>
-                    <ul>
-                        <li><strong>Haberleşme:</strong> Bluetooth üzerinden seri veri iletimi ve mobil kontrol.</li>
-                        <li><strong>Sensör Yönetimi:</strong> Gaz (MQ-2), Hareket (PIR) ve Mesafe sensörlerinin kalibrasyonu.</li>
-                        <li><strong>Enerji:</strong> Güneş paneli entegrasyonu ile sürdürülebilir sistem beslemesi.</li>
-                    </ul>
-                </div>
-
-                <div class="project-links">
-                    <a href="tez_ÇIKTI.pdf" target="_blank" class="doc-btn"><i class="fas fa-file-pdf"></i> Tezi Görüntüle</a>
-                    <a href="https://github.com/helvamiray/Akilli-Ev-Sistemi-IoT" target="_blank" class="doc-btn"><i class="fab fa-github"></i> Kodları İncele</a>
-                </div>
+            <div class="technical-details">
+                <h4><i class="fas fa-tools"></i> Technical Highlights:</h4>
+                <ul>
+                    <li><strong>Robotic Coding:</strong> Advanced Arduino integration for sensor calibration (MQ-2, PIR).</li>
+                    <li><strong>Connectivity:</strong> Bluetooth-based serial data transmission and mobile control.</li>
+                    <li><strong>Energy:</strong> Sustainable system power through solar panel integration.</li>
+                    <li><strong>Robotics:</strong> Experience in building "Line Following Robots."</li>
+                </ul>
             </div>
-        </section>
 
-        <section id="skills">
-            <h2><i class="fas fa-laptop-code"></i> Yetenekler</h2>
-            <ul class="skills-list">
-                <li><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5</li>
-                <li><i class="fab fa-css3-alt" style="color: #264de4;"></i> CSS3</li>
-                <li><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</li>
-                <li><i class="fas fa-microchip"></i> Embedded C++</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2><i class="fas fa-envelope"></i> İletişim</h2>
-            <div class="contact-info">
-                <a href="mailto:mirayhelva15@icloud.com" class="email-link">
-                    <i class="fas fa-at"></i> mirayhelva15@icloud.com
-                </a>
+            <div class="project-links">
+                <a href="tez_ÇIKTI.pdf" target="_blank" class="doc-btn"><i class="fas fa-file-pdf"></i> View Thesis</a>
+                <a href="YOUR_YOUTUBE_VIDEO_LINK_HERE" target="_blank" class="doc-btn youtube"><i class="fab fa-youtube"></i> Watch Demo</a>
+                <a href="https://github.com/helvamiray/Akilli-Ev-Sistemi-IoT" target="_blank" class="doc-btn"><i class="fab fa-github"></i> Source Code</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Miray Helva - Yazılım Mühendisliği Öğrencisi</p>
-    </footer>
+    <section id="skills">
+        <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fab fa-php" style="color: #777bb4;"></i> PHP (Web Development)</li>
+            <li><i class="fab fa-java" style="color: #007396;"></i> Java (OOP)</li>
+            <li><i class="fas fa-code" style="color: #00599c;"></i> C / C++</li>
+            <li><i class="fas fa-microchip" style="color: #ff9900;"></i> Arduino & Robotics</li>
+            <li><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5 / CSS3</li>
+        </ul>
+    </section>
 
-    <script>
-        const text = "Software Engineering Student | IoT & Frontend Developer";
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                document.getElementById("typing-text").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 70);
-            }
+    <section id="education">
+        <h2><i class="fas fa-certificate"></i> Education & Certifications</h2>
+        <div class="edu-item">
+            <p><strong>Software Engineering Student</strong></p>
+            <p>Key Courses: Object-Oriented Programming (Java), Data Structures (C/C++), Web Programming (PHP).</p>
+            <p><i>*Microcontroller Certification and other details are available on my LinkedIn profile.</i></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Miray Helva - Software Engineering Student</p>
+</footer>
+
+<script>
+    const text = "Software Engineering Student | IoT & Full-Stack Developer";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 70);
         }
-        window.onload = typeWriter;
-    </script>
+    }
+    window.onload = typeWriter;
+</script>
 
 </body>
 </html>
